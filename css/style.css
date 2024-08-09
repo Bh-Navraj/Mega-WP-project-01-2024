@@ -80,7 +80,9 @@ body {
     font-weight: 400; 
 
 }
-
+strong {
+    font-weight: bold;
+}
 p { 
     font-size: 16px;
     line-height: 1.5;
@@ -127,4 +129,39 @@ h6, .font-20 {
 }
 .small {
     font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+
+/*** Pages CSS  ***/
+.site-header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header-right {
+    gap: 32px;
+}
+.call-us a {
+    color: var(--black);
+    gap: 10px;
+    text-decoration: none;
+}
+.call-us div {
+    flex-direction: column;
+}
+.live {
+
 }
