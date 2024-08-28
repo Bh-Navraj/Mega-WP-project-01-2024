@@ -191,6 +191,20 @@ h6, .font-20 {
 .logo {
     height: 85px;
 }
+.menu-toggle {
+    background-color: transparent;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+}
+.menu-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: #454545;
+    margin: 4px 0;
+    display: block;
+}
 .site-header-right {
     gap: 32px;
 }
@@ -276,6 +290,30 @@ h6, .font-20 {
 }
 .hero-heading {
     gap: 12px;
+}
+
+
+/*-- Responsive CSS --*/
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .site-header-right {
+        margin-top: 16px;
+        gap: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 999;
+        padding: 8px 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .call-us .call-us-info {
+        display: none;
+    }
 }
 
 
