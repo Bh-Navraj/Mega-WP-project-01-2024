@@ -179,6 +179,16 @@ h6, .font-20 {
     align-items: center;
 }
 
+.column-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.col-1 {
+    width: calc(25% - (90px / 4));
+}
+
 
 /*** header CSS  ***/
 .site-header {
@@ -197,6 +207,7 @@ h6, .font-20 {
     width: 42px;
     height: 42px;
     border: none;
+    display: none;
 }
 .menu-toggle span {
     width: 100%;
@@ -291,12 +302,30 @@ h6, .font-20 {
 .hero-heading {
     gap: 12px;
 }
+.fact {
+    padding: 24px 0;
+}
+.fact strong,
+.fact span {
+    display: block;
+    text-align: center;
+    padding: 0 32px;
+}
+.fact strong {
+    font-size: 49px;
+}
+.fact span {
+    font-size: 20px;
+    margin-top: 12px;
+    line-height: 1.3;
+}
 
 
 /*-- Responsive CSS --*/
 @media (max-width: 767px) {
     .container {
         width: 100%;
+        padding: 0 32px;
     }
     .site-header-right {
         margin-top: 16px;
@@ -313,6 +342,20 @@ h6, .font-20 {
     }
     .call-us .call-us-info {
         display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    #siteNavigation {
+        display: none;
+        padding: 32px;
+    }
+    .site-navigation ul {
+        display: block;
+    }
+    .site-navigation ul li a {
+        display: block;
+        padding: 16px;
     }
 }
 

@@ -20,7 +20,7 @@
                     <img src="./images/logo.png" alt="Mega College Logo" height="85px">
                 </a>
             </div>
-            <button class="menu-toggle">
+            <button class="menu-toggle" id="menuToggleButton" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -49,7 +49,7 @@
         </div><!-- container end -->
     </header><!-- site-header end -->
 
-    <nav class="site-navigation">
+    <nav id="siteNavigation" class="site-navigation">
         <div class="container">
             <ul>
                 <li><a href="#">About us</a></li>
@@ -77,15 +77,48 @@
 
     <section>
         <div class="container">
-            <h1>Welcome</h1>
-            <p>Welcome to  situated in the heart of Babarmahal, Baneshwor. Here, academic excellence meets a vibrant community committed to shaping future leaders. Our institution takes pride in offering a diverse range of cutting-edge programs designed to inspire, challenge, and empower students. At College, we believe in fostering an environment that encourages intellectual curiosity, critical thinking, and a passion for lifelong learning. Our dedicated faculty, state-of-the-art facilities, and robust support services create an enriching academic experience. Whether you're embarking on your undergraduate journey, pursuing advanced degrees, or seeking professional development</p>
-
-            <p>Welcome to  situated in the heart of Babarmahal, Baneshwor. Here, academic excellence meets a vibrant community committed to shaping future leaders. Our institution takes pride in offering a diverse range of cutting-edge programs designed to inspire, challenge, and empower students. At College, we believe in fostering an environment that encourages intellectual curiosity, critical thinking, and a passion for lifelong learning. Our dedicated faculty, state-of-the-art facilities, and robust support services create an enriching academic experience. Whether you're embarking on your undergraduate journey, pursuing advanced degrees, or seeking professional development</p>
-
-            <p>Welcome to  situated in the heart of Babarmahal, Baneshwor. Here, academic excellence meets a vibrant community committed to shaping future leaders. Our institution takes pride in offering a diverse range of cutting-edge programs designed to inspire, challenge, and empower students. At College, we believe in fostering an environment that encourages intellectual curiosity, critical thinking, and a passion for lifelong learning. Our dedicated faculty, state-of-the-art facilities, and robust support services create an enriching academic experience. Whether you're embarking on your undergraduate journey, pursuing advanced degrees, or seeking professional development</p>
-
+            <div class="column-wrapper">
+                <div class="col-1">
+                    <div class="fact">
+                        <strong>25</strong>
+                        <span>Undergraduate Programs</span>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="fact">
+                        <strong>90%</strong>
+                        <span>Graduation Rate</span>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="fact">
+                        <strong>10+</strong>
+                        <span>Indoor and Outdoor Sport Facilities</span>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="fact">
+                        <strong>2500+</strong>
+                        <span>Yearly Student Enrollment</span>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
+    
+
+
+    <script>
+        function toggleMenu() {
+            var toggle = document.getElementById("siteNavigation");
+            if (toggle.style.display === "block") {
+                toggle.style.display = "none";
+            } else {
+                toggle.style.display = "block";
+            }
+            }
+    </script>
 
 </body>
 </html>
