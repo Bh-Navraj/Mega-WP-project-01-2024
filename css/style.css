@@ -322,11 +322,13 @@ h6, .font-20 {
 
 
 /*-- Responsive CSS --*/
-@media (max-width: 767px) {
+@media (max-width: 1230px) {
     .container {
         width: 100%;
         padding: 0 32px;
     }
+}
+@media (max-width: 767px) {
     .site-header-right {
         margin-top: 16px;
         gap: 10px;
@@ -356,6 +358,13 @@ h6, .font-20 {
     .site-navigation ul li a {
         display: block;
         padding: 16px;
+    }
+    .column-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .col-1 {
+        width: 100%;
     }
 }
 
