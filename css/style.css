@@ -160,7 +160,35 @@ h6, .font-20 {
     background-color: var(--secondary-dark);
     text-decoration: none;
 }
-
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    color: var(--primary);
+}
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    color: #ffffff;
+}
+.tab-btn {
+    padding: 0 32px;
+    height: 64px;
+    max-height: 64px;
+    line-height: 64px;
+    font-size: 20px;
+}
+.tab-btn.active {
+    background-color: var(--secondary);
+    color: var(--black);
+}
 
 .container {
     width: 1200px;
@@ -183,12 +211,62 @@ h6, .font-20 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    margin: 0 -15px;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .col-1 {
-    width: calc(25% - (90px / 4));
+    width: calc(100% / 12);
 }
-
+.col-2 {
+    width: calc(2 * (100% / 12))
+}
+.col-3 {
+    width: calc(3 * (100% / 12));
+}
+.col-4 {
+    width: calc(4 * (100% / 12));
+}
+.col-5 {
+    width: calc(5 * (100% / 12));
+}
+.col-6 {
+    width: calc(6 * (100% / 12));
+}
+.col-7 {
+    width: calc(7 * (100% / 12));
+}
+.col-8 {
+    width: calc(8 * (100% / 12));
+}
+.col-9 {
+    width: calc(9 * (100% / 12));
+}
+.col-10 {
+    width: calc(10 * (100% / 12));
+}
+.col-11 {
+    width: calc(11 * (100% / 12));
+}
+.col-12 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
 
 /*** header CSS  ***/
 .site-header {
@@ -247,6 +325,7 @@ h6, .font-20 {
     background-color: var(--success);
     margin-right: 6px;
 }
+
 
 /*** header End  ***/
 
@@ -319,6 +398,19 @@ h6, .font-20 {
     margin-top: 12px;
     line-height: 1.3;
 }
+.program-container {
+    background-color: var(--gray-light);
+    padding: 64px 0;
+}
+.link-wrapper {
+    margin: 24px 0;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: flex;
+}
 
 
 /*-- Responsive CSS --*/
@@ -363,7 +455,7 @@ h6, .font-20 {
         flex-direction: column;
         gap: 15px;
     }
-    .col-1 {
+    .col-3 {
         width: 100%;
     }
 }
